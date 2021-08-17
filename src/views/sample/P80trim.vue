@@ -2,23 +2,10 @@
   <div class="sample">
     <form>
       <div>.trim修飾子</div>
-      <label for="memo1">名前(.trim無し：空白が反映される)：</label><br />
-      <input
-        type="text"
-        id="memo1"
-        v-model="memo1"
-        v-on:change="onchange"
-      /><br />
-      <p>{{ memo1 }}</p>
-      <label for="memo2">名前(.trimあり：空白が除去して反映される)：</label
-      ><br />
-      <input
-        type="text"
-        id="memo2"
-        v-model.trim="memo2"
-        v-on:change="onchange"
-      /><br />
-      <p>{{ memo2 }}</p>
+      <input type="text" v-model.trim="str1" />と
+      <input type="text" v-model.trim="str2" />を<br />
+      連結した結果は「{{ result }}」です。
+      <button type="button" v-on:click="onclick">連結する</button>
     </form>
   </div>
 </template>
@@ -28,12 +15,12 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class SampleComponent extends Vue {
-  memo1 = "";
-  memo2 = "";
+  str1 = "";
+  str2 = "";
+  result = "";
 
-  onchange(): void {
-    console.log("メモ１「" + this.memo1 + "」");
-    console.log("メモ２「" + this.memo2 + "」");
+  onclick(): void {
+    this.result = this.str1 + this.str2;
   }
 }
 </script>
