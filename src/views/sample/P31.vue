@@ -3,9 +3,10 @@
     <form>
       <button type="button" v-on:click="onclick">クリック</button>
     </form>
-    <div>算出プロパティ(getterメソッド):{{ randomGetter }}</div>
+    <div>クリック回数：{{ count }}</div>
+    <hr />
+    <div>算出プロパティ(Getterメソッド):{{ randomGetter }}</div>
     <div>メソッド：{{ randomMethod() }}</div>
-    <div>現在日時：{{ current }}</div>
   </div>
 </template>
 
@@ -14,19 +15,21 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class SampleComponent extends Vue {
-  current = new Date().toLocaleString();
+  count = 0;
 
-  // 算出プロパティ(TypeScriptではGetterで表現)
+  // 算出プロパティ(Getterメソッド)
   get randomGetter(): number {
     return Math.random();
   }
 
   // メソッド
-  onclick(): void {
-    this.current = new Date().toLocaleString();
-  }
   randomMethod(): number {
     return Math.random();
+  }
+
+  // ボタンがクリックされたら呼ばれます
+  onclick(): void {
+    this.count++;
   }
 }
 </script>

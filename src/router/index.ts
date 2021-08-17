@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Home from "../views/Home.vue";
-import ParentSample from "../views/booksample/ParentSample.vue";
+import ParentSample from "../views/sample/ParentSample.vue";
 
 Vue.use(VueRouter);
 
@@ -113,44 +113,52 @@ const routes: Array<RouteConfig> = [
     component: () => import("../views/answer/Ex10.vue"),
   },
   {
+    path: "/p359",
+    component: () => import("../views/sample/P359.vue"),
+  },
+  {
     path: "/p353",
-    component: () => import("../views/booksample/P353.vue"),
+    component: () => import("../views/sample/P353.vue"),
   },
   {
     path: "/p350",
-    component: () => import("../views/booksample/P350.vue"),
+    component: () => import("../views/sample/P350.vue"),
+  },
+  {
+    path: "/p345_2",
+    component: () => import("../views/sample/P345_2.vue"),
   },
   {
     path: "/p345",
-    component: () => import("../views/booksample/P345.vue"),
+    component: () => import("../views/sample/P345.vue"),
   },
   {
     path: "/p172",
-    component: () => import("../views/booksample/P172Parent.vue"),
+    component: () => import("../views/sample/P172Parent.vue"),
   },
   {
     path: "/p168",
-    component: () => import("../views/booksample/P168Parent.vue"),
+    component: () => import("../views/sample/P168Parent.vue"),
   },
   {
     path: "/p165",
-    component: () => import("../views/booksample/P165Parent.vue"),
+    component: () => import("../views/sample/P165Parent.vue"),
   },
   {
     path: "/p159",
-    component: () => import("../views/booksample/P159Parent.vue"),
+    component: () => import("../views/sample/P159Parent.vue"),
   },
   {
     path: "/p152",
-    component: () => import("../views/booksample/P152Parent.vue"),
+    component: () => import("../views/sample/P152Parent.vue"),
   },
   {
     path: "/p151",
-    component: () => import("../views/booksample/P151Parent.vue"),
+    component: () => import("../views/sample/P151Parent.vue"),
   },
   {
     path: "/p143",
-    component: () => import("../views/booksample/P143OrLaterParent.vue"),
+    component: () => import("../views/sample/P143OrLaterParent.vue"),
   },
   {
     path: "/parentSample",
@@ -159,48 +167,80 @@ const routes: Array<RouteConfig> = [
   },
   {
     path: "/p108",
-    component: () => import("../views/booksample/P108OrLater.vue"),
+    component: () => import("../views/sample/P108OrLater.vue"),
   },
   {
     path: "/p93",
-    component: () => import("../views/booksample/P93OrLater.vue"),
+    component: () => import("../views/sample/P93OrLater.vue"),
   },
   {
     path: "/p84",
-    component: () => import("../views/booksample/P84OrLater.vue"),
+    component: () => import("../views/sample/P84OrLater.vue"),
+  },
+  {
+    path: "/p81",
+    component: () => import("../views/sample/P81lazy.vue"),
+  },
+  {
+    path: "/p80",
+    component: () => import("../views/sample/P80trim.vue"),
   },
   {
     path: "/p79",
-    component: () => import("../views/booksample/P79OrLater.vue"),
+    component: () => import("../views/sample/P79number.vue"),
+  },
+  {
+    path: "/p74",
+    component: () => import("../views/sample/P74multiSelectBox.vue"),
+  },
+  {
+    path: "/p73",
+    component: () => import("../views/sample/P73singleSelectBox.vue"),
+  },
+  {
+    path: "/p71",
+    component: () => import("../views/sample/P71multiCheckBox.vue"),
+  },
+  {
+    path: "/p70",
+    component: () => import("../views/sample/P70singleCheckBox.vue"),
+  },
+  {
+    path: "/p69",
+    component: () => import("../views/sample/P69radioButton.vue"),
   },
   {
     path: "/p67",
-    component: () => import("../views/booksample/P67OrLater.vue"),
+    component: () => import("../views/sample/P67textBox.vue"),
   },
   {
     path: "/p53",
-    component: () => import("../views/booksample/P53.vue"),
+    component: () => import("../views/sample/P53.vue"),
   },
   {
     path: "/p35",
-    component: () => import("../views/booksample/P35.vue"),
+    component: () => import("../views/sample/P35.vue"),
   },
   {
     path: "/p31",
-    component: () => import("../views/booksample/P31.vue"),
+    component: () => import("../views/sample/P31.vue"),
   },
   {
     path: "/p29",
-    component: () => import("../views/booksample/P29.vue"),
+    component: () => import("../views/sample/P29.vue"),
   },
   {
     path: "/p26",
-    component: () => import("../views/booksample/P26.vue"),
+    component: () => import("../views/sample/P26.vue"),
+  },
+  {
+    path: "/p24",
+    component: () => import("../views/sample/P24.vue"),
   },
   {
     path: "/p18",
     // name: "P18",
-    component: () => import("../views/booksample/P18.vue"),
+    component: () => import("../views/sample/P18.vue"),
   },
   {
     path: "/",

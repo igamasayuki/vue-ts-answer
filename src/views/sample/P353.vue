@@ -27,6 +27,7 @@ export default class SampleComponent extends Vue {
   price = 0;
 
   onclick(): void {
+    // ミューテーションを使って同期処理
     this["$store"].commit("addBook", {
       book: {
         isbn: this.isbn,

@@ -1,7 +1,11 @@
 <template>
   <div class="sample">
-    <button type="button" v-on:click="onclick">クリック</button>
-    <p>{{ message }}</p>
+    <form>
+      <div>チェックボックス(単一)</div>
+      <label for="agree">同意する：</label>
+      <input type="checkbox" id="agree" v-model="agree" />
+      <p>回答:{{ agree }}</p>
+    </form>
   </div>
 </template>
 
@@ -10,16 +14,13 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class SampleComponent extends Vue {
-  message = "";
-
-  onclick(): void {
-    this.message = new Date().toLocaleTimeString();
-  }
+  agree = false;
 }
 </script>
 
 <style scoped>
 .sample {
   border: solid;
+  padding: 10px;
 }
 </style>

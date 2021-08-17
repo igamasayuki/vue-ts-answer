@@ -9,13 +9,21 @@
     <h2>Samples</h2>
     <router-link to="/parentSample">ParentSample</router-link> |
     <router-link to="/p18">P18</router-link> |
+    <router-link to="/p24">P24</router-link> |
     <router-link to="/p26">P26</router-link> |
     <router-link to="/p29">P29</router-link> |
     <router-link to="/p31">P31</router-link> |
     <router-link to="/p35">P35</router-link> |
     <router-link to="/p53">P53</router-link> |
-    <router-link to="/p67">P67orLater</router-link> |
-    <router-link to="/p79">P79orLater</router-link> |
+    <router-link to="/p67">P67textBox</router-link> |
+    <router-link to="/p69">P69radioButton</router-link> |
+    <router-link to="/p70">P70singleCheckBox</router-link> |
+    <router-link to="/p71">P71multiCheckBox</router-link> |
+    <router-link to="/p73">P73simgleSelectBox</router-link> |
+    <router-link to="/p74">P74multiSelectBox</router-link> |
+    <router-link to="/p79">P79number</router-link> |
+    <router-link to="/p80">P80trim</router-link> |
+    <router-link to="/p81">P81lazy</router-link> |
     <router-link to="/p84">P84orLater</router-link> |
     <router-link to="/p93">P93orLater</router-link> |
     <router-link to="/p108">P108orLater</router-link> |
@@ -27,8 +35,10 @@
     <router-link to="/p168">P168Parent</router-link> |
     <router-link to="/p172">P172Parent</router-link> |
     <router-link to="/p345">P345</router-link> |
+    <router-link to="/p345_2">P345_2</router-link> |
     <router-link to="/p350">P350</router-link> |
     <router-link to="/p353">P353</router-link> |
+    <router-link to="/p359">P359</router-link> |
 
     <h2>Exam answers</h2>
     <router-link to="/ex10">Ex10</router-link> |

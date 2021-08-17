@@ -19,8 +19,9 @@ export default class SampleComponent extends Vue {
     return this.email.split("@")[0].toLowerCase();
   }
 
+  // 算出プロパティ(TypeScriptではGetterで表現)
   get secondHalfOfEmail(): string {
-    // @の前半部分を切り出してreturnする
+    // @の後半部分を切り出してreturnする
     return this.email.split("@")[1].toLowerCase();
   }
 }

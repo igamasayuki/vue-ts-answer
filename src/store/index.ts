@@ -35,6 +35,14 @@ export default new Vuex.Store({
       };
     },
   },
-  actions: {},
+  actions: {
+    addAsync(context, payload) {
+      // 5000ミリ秒後にミューテーション(ADD_BOOK)をコミット
+      setTimeout(function () {
+        context.commit("addBook", payload);
+      }, 5000);
+    },
+  },
+
   modules: {},
 });
