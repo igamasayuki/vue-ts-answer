@@ -24,7 +24,12 @@
     <router-link to="/p79">P79number</router-link> |
     <router-link to="/p80">P80trim</router-link> |
     <router-link to="/p81">P81lazy</router-link> |
-    <router-link to="/p84">P84orLater</router-link> |
+    <router-link to="/p84">P84v-if</router-link> |
+    <router-link to="/p85">P85v-else</router-link> |
+    <router-link to="/p86">P86v-else-if</router-link> |
+    <router-link to="/p87">P87notUseKey</router-link> |
+    <router-link to="/p90">P90useKey</router-link> |
+    <router-link to="/p91">P91v-show</router-link> |
     <router-link to="/p93">P93orLater</router-link> |
     <router-link to="/p108">P108orLater</router-link> |
     <router-link to="/p143">P143orLaterParent</router-link> |

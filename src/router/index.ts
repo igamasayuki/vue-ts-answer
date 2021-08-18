@@ -174,8 +174,28 @@ const routes: Array<RouteConfig> = [
     component: () => import("../views/sample/P93OrLater.vue"),
   },
   {
+    path: "/p91",
+    component: () => import("../views/sample/P91v-show.vue"),
+  },
+  {
+    path: "/p90",
+    component: () => import("../views/sample/P90useKey.vue"),
+  },
+  {
+    path: "/p87",
+    component: () => import("../views/sample/P87notUseKey.vue"),
+  },
+  {
+    path: "/p86",
+    component: () => import("../views/sample/P86v-else-if.vue"),
+  },
+  {
+    path: "/p85",
+    component: () => import("../views/sample/P85v-else.vue"),
+  },
+  {
     path: "/p84",
-    component: () => import("../views/sample/P84OrLater.vue"),
+    component: () => import("../views/sample/P84v-if.vue"),
   },
   {
     path: "/p81",
