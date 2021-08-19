@@ -13,7 +13,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import { Employee } from "../../employee";
+import { Employee } from "../../types/employee";
 @Component
 export default class Ex250CompEmployeeInfo extends Vue {
   private employee: Employee = new Employee(

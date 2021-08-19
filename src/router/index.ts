@@ -170,8 +170,24 @@ const routes: Array<RouteConfig> = [
     component: () => import("../views/sample/P108OrLater.vue"),
   },
   {
+    path: "/p98",
+    component: () => import("../views/sample/P98v-for-filter.vue"),
+  },
+  {
+    path: "/p96",
+    component: () => import("../views/sample/P96v-for-get.vue"),
+  },
+  {
+    path: "/p95",
+    component: () => import("../views/sample/P95v-for-index.vue"),
+  },
+  {
+    path: "/p93_2",
+    component: () => import("../views/sample/P93v-for2.vue"),
+  },
+  {
     path: "/p93",
-    component: () => import("../views/sample/P93OrLater.vue"),
+    component: () => import("../views/sample/P93v-for.vue"),
   },
   {
     path: "/p91",

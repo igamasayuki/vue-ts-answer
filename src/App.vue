@@ -30,7 +30,11 @@
     <router-link to="/p87">P87notUseKey</router-link> |
     <router-link to="/p90">P90useKey</router-link> |
     <router-link to="/p91">P91v-show</router-link> |
-    <router-link to="/p93">P93orLater</router-link> |
+    <router-link to="/p93">P93v-for</router-link> |
+    <router-link to="/p93_2">P93v-for2</router-link> |
+    <router-link to="/p95">P95v-for-index</router-link> |
+    <router-link to="/p96">P96v-for-get</router-link> |
+    <router-link to="/p98">P98v-for-filter</router-link> |
     <router-link to="/p108">P108orLater</router-link> |
     <router-link to="/p143">P143orLaterParent</router-link> |
     <router-link to="/p151">P151Parent</router-link> |

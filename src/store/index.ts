@@ -1,4 +1,4 @@
-import { Book } from "@/book";
+import { Book } from "@/types/book";
 import Vue from "vue";
 import Vuex from "vuex";
 

@@ -32,19 +32,21 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import { Employee } from "../../types/employee";
+
 @Component
 export default class SampleComponent extends Vue {
-  id!: number;
-  name!: string;
-  hireDate!: string;
-  salary!: number;
-  dependentsCount!: number;
-
   employees = [
     new Employee(10, "渡辺三郎", "2018-10-29", 130000, 3),
     new Employee(20, "佐藤次郎", "2017-08-22", 450000, 3),
     new Employee(30, "山本八郎", "2017-6-18", 300000, 12),
   ];
+
+  id = 0;
+  name = "サンプル太郎";
+  hireDate = "2021-8-20";
+  salary = 180000;
+  dependentsCount = 5;
 
   // 先頭の要素を削除
   deleteFirstEmployee(): void {
@@ -65,68 +67,6 @@ export default class SampleComponent extends Vue {
         this.dependentsCount
       )
     );
-  }
-}
-
-class Employee {
-  private _id!: number;
-  private _name!: string;
-  private _hireDate!: string;
-  private _salary!: number;
-  private _dependentsCount!: number;
-
-  constructor(
-    id: number,
-    name: string,
-    hireDate: string,
-    salary: number,
-    dependentsCount: number
-  ) {
-    this._id = id;
-    this._name = name;
-    this._hireDate = hireDate;
-    this._salary = salary;
-    this._dependentsCount = dependentsCount;
-  }
-
-  public get id(): number {
-    return this._id;
-  }
-
-  public set id(id: number) {
-    this._id = id;
-  }
-
-  public get name(): string {
-    return this._name;
-  }
-
-  public set name(name: string) {
-    this._name = name;
-  }
-
-  public get hireDate(): string {
-    return this._hireDate;
-  }
-
-  public set hireDate(hireDate: string) {
-    this._hireDate = hireDate;
-  }
-
-  public get salary(): number {
-    return this._salary;
-  }
-
-  public set salary(salary: number) {
-    this._salary = salary;
-  }
-
-  public get dependentsCount(): number {
-    return this._dependentsCount;
-  }
-
-  public set dependentsCount(dependentsCount: number) {
-    this._dependentsCount = dependentsCount;
   }
 }
 </script>

@@ -6,25 +6,6 @@ export class Employee {
     private _salary: number,
     private _dependentsCount: number
   ) {}
-  // private _id!: number;
-  // private _name!: string;
-  // private _hireDate!: string;
-  // private _salary!: number;
-  // private _dependentsCount!: number;
-
-  // constructor(
-  //   id: number,
-  //   name: string,
-  //   hireDate: string,
-  //   salary: number,
-  //   dependentsCount: number
-  // ) {
-  //   this._id = id;
-  //   this._name = name;
-  //   this._hireDate = hireDate;
-  //   this._salary = salary;
-  //   this._dependentsCount = dependentsCount;
-  // }
 
   public get id(): number {
     return this._id;
