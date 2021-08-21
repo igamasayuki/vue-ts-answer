@@ -47,6 +47,10 @@ const routes: Array<RouteConfig> = [
     component: () => import("../views/answer/Ex160.vue"),
   },
   {
+    path: "/ex151",
+    component: () => import("../views/answer/Ex151.vue"),
+  },
+  {
     path: "/ex150",
     component: () => import("../views/answer/Ex150.vue"),
   },
@@ -167,7 +171,7 @@ const routes: Array<RouteConfig> = [
   },
   {
     path: "/p108",
-    component: () => import("../views/sample/P108OrLater.vue"),
+    component: () => import("../views/sample/P108v-bind.vue"),
   },
   {
     path: "/p98",

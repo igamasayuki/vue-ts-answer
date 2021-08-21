@@ -35,7 +35,7 @@
     <router-link to="/p95">P95v-for-index</router-link> |
     <router-link to="/p96">P96v-for-get</router-link> |
     <router-link to="/p98">P98v-for-filter</router-link> |
-    <router-link to="/p108">P108orLater</router-link> |
+    <router-link to="/p108">P108v-bind</router-link> |
     <router-link to="/p143">P143orLaterParent</router-link> |
     <router-link to="/p151">P151Parent</router-link> |
     <router-link to="/p152">P152Parent</router-link> |
@@ -66,6 +66,7 @@
     <router-link to="/ex130">Ex130</router-link> |
     <router-link to="/ex140">Ex140</router-link> |
     <router-link to="/ex150">Ex150</router-link> |
+    <router-link to="/ex151">Ex151</router-link> |
     <router-link to="/ex160">Ex160</router-link> |
     <router-link to="/ex170">Ex170</router-link> |
     <router-link to="/ex190">Ex190</router-link> |

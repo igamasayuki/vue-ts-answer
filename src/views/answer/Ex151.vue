@@ -1,6 +1,6 @@
 <template>
   <div class="ex">
-    <textarea v-bind:rows="rows" v-bind:cols="cols"></textarea>
+    <textarea v-bind="attributes"></textarea>
     <button type="button" v-on:click="chengeSize">サイズを変える</button>
     <br />
     rows:{{ rows }} / cols:{{ cols }}
@@ -11,19 +11,21 @@
 import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class SampleComponent extends Vue {
-  rows = 5;
-  cols = 5;
+  attributes = {
+    rows: 5,
+    cols: 5,
+  };
 
   chengeSize(): void {
-    if (this.rows === 5) {
-      this.rows = 10;
+    if (this.attributes["rows"] === 5) {
+      this.attributes["rows"] = 10;
     } else {
-      this.rows = 5;
+      this.attributes["rows"] = 5;
     }
-    if (this.cols === 5) {
-      this.cols = 10;
+    if (this.attributes["cols"] === 5) {
+      this.attributes["cols"] = 10;
     } else {
-      this.cols = 5;
+      this.attributes["cols"] = 5;
     }
   }
 }
