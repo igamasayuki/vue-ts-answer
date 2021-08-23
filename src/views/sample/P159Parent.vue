@@ -9,7 +9,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import P159CompMyCounter from "../../components/booksample/P159CompMyCounter.vue";
+import P159CompMyCounter from "../../components/sample/P159CompMyCounter.vue";
 @Component({
   components: {
     P159CompMyCounter,

@@ -4,7 +4,6 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
-    <router-view />
 
     <h2>Samples</h2>
     <router-link to="/parentSample">ParentSample</router-link> |
@@ -36,9 +35,9 @@
     <router-link to="/p96">P96v-for-get</router-link> |
     <router-link to="/p98">P98v-for-filter</router-link> |
     <router-link to="/p108">P108v-bind</router-link> |
-    <router-link to="/p143">P143orLaterParent</router-link> |
-    <router-link to="/p151">P151Parent</router-link> |
-    <router-link to="/p152">P152Parent</router-link> |
+    <router-link to="/p143">P143BasicParent</router-link> |
+    <router-link to="/p151">P151PropsParent</router-link> |
+    <router-link to="/p152">P152CountUpParent</router-link> |
     <router-link to="/p159">P159Parent</router-link> |
     <router-link to="/p165">P165Parent</router-link> |
     <router-link to="/p168">P168Parent</router-link> |
@@ -77,6 +76,9 @@
     <router-link to="/ex230">Ex230</router-link> |
     <router-link to="/ex240">Ex240</router-link> |
     <router-link to="/ex250">Ex250</router-link> |
+
+    <h2>Execution result</h2>
+    <router-view />
   </div>
 </template>
 

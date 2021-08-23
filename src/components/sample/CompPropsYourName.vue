@@ -7,8 +7,9 @@
 <script lang="ts">
 import { Prop, Component, Vue } from "vue-property-decorator";
 @Component
-export default class P150CompMyHello extends Vue {
-  @Prop() private yourName!: string;
+export default class CompPropsYourName extends Vue {
+  @Prop({ default: "名無し" })
+  yourName!: string;
 }
 </script>
 

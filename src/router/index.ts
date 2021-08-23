@@ -154,15 +154,15 @@ const routes: Array<RouteConfig> = [
   },
   {
     path: "/p152",
-    component: () => import("../views/sample/P152Parent.vue"),
+    component: () => import("../views/sample/P152CountUpParent.vue"),
   },
   {
     path: "/p151",
-    component: () => import("../views/sample/P151Parent.vue"),
+    component: () => import("../views/sample/P151PropsParent.vue"),
   },
   {
     path: "/p143",
-    component: () => import("../views/sample/P143OrLaterParent.vue"),
+    component: () => import("../views/sample/P143BasicParent.vue"),
   },
   {
     path: "/parentSample",
