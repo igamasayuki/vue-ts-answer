@@ -19,6 +19,10 @@ const routes: Array<RouteConfig> = [
     component: () => import("../views/answer/Ex230.vue"),
   },
   {
+    path: "/ex225",
+    component: () => import("../views/answer/Ex225.vue"),
+  },
+  {
     path: "/ex220",
     component: () => import("../views/answer/Ex220.vue"),
   },
@@ -149,8 +153,12 @@ const routes: Array<RouteConfig> = [
     component: () => import("../views/sample/P165Parent.vue"),
   },
   {
+    path: "/p159_2",
+    component: () => import("../views/sample/P159EmitParent2.vue"),
+  },
+  {
     path: "/p159",
-    component: () => import("../views/sample/P159Parent.vue"),
+    component: () => import("../views/sample/P159EmitParent.vue"),
   },
   {
     path: "/p152",

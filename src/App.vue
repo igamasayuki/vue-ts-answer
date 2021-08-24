@@ -38,7 +38,8 @@
     <router-link to="/p143">P143BasicParent</router-link> |
     <router-link to="/p151">P151PropsParent</router-link> |
     <router-link to="/p152">P152CountUpParent</router-link> |
-    <router-link to="/p159">P159Parent</router-link> |
+    <router-link to="/p159">P159EmitParent</router-link> |
+    <router-link to="/p159_2">P159EmitParent2</router-link> |
     <router-link to="/p165">P165Parent</router-link> |
     <router-link to="/p168">P168Parent</router-link> |
     <router-link to="/p172">P172Parent</router-link> |
@@ -73,6 +74,7 @@
     <router-link to="/ex210">Ex210</router-link> |
     <router-link to="/ex215">Ex215</router-link> |
     <router-link to="/ex220">Ex220</router-link> |
+    <router-link to="/ex225">Ex225</router-link> |
     <router-link to="/ex230">Ex230</router-link> |
     <router-link to="/ex240">Ex240</router-link> |
     <router-link to="/ex250">Ex250</router-link> |

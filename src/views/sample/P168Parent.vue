@@ -15,7 +15,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import P168CompMySlot from "../../components/booksample/P168CompMySlot.vue";
+import P168CompMySlot from "../../components/sample/P168CompMySlot.vue";
 @Component({
   components: {
     P168CompMySlot,

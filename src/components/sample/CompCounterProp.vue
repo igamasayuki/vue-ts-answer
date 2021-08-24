@@ -8,7 +8,7 @@
 <script lang="ts">
 import { Prop, Component, Vue } from "vue-property-decorator";
 @Component
-export default class CompCounter extends Vue {
+export default class CompCounterProp extends Vue {
   @Prop({ default: 0 })
   private initialCount!: number;
 

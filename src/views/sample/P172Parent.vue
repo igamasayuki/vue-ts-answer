@@ -15,7 +15,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import P172CompMyBook from "../../components/booksample/P172CompMyBook.vue";
+import P172CompMyBook from "../../components/sample/P172CompMyBook.vue";
 @Component({
   components: {
     P172CompMyBook,

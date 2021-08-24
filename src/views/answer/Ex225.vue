@@ -1,18 +1,18 @@
 <template>
   <div class="compSample">
     <p>現在値：{{ current }}</p>
-    <P159CompMyCounter step="1" v-on:plus="onplus"></P159CompMyCounter>
-    <P159CompMyCounter step="2" v-on:plus="onplus"></P159CompMyCounter>
-    <P159CompMyCounter step="-1" v-on:plus="onplus"></P159CompMyCounter>
+    <CompCounterEmit step="1" v-on:plus="onplus"></CompCounterEmit>&nbsp;&nbsp;
+    <CompCounterEmit step="2" v-on:plus="onplus"></CompCounterEmit>&nbsp;&nbsp;
+    <CompCounterEmit step="-1" v-on:plus="onplus"></CompCounterEmit>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import P159CompMyCounter from "../../components/sample/P159CompMyCounter.vue";
+import CompCounterEmit from "../../components/answer/Ex225CompCounterEmit.vue";
 @Component({
   components: {
-    P159CompMyCounter,
+    CompCounterEmit,
   },
 })
 export default class Parent extends Vue {

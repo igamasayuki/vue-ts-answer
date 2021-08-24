@@ -1,6 +1,6 @@
 <template>
   <div class="ex">
-    <button type="button" v-on:click="preparePush">{{ yesOrNo }}</button>
+    <button type="button" v-on:click="prePush">{{ yesOrNo }}</button>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default class Ex220CompYesOrNo extends Vue {
   public push(value: string): void {
     console.log("pushイベント発生 value =" + value);
   }
-  public preparePush(): void {
+  public prePush(): void {
     this.push(this.yesOrNo);
   }
 }
