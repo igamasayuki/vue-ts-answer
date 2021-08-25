@@ -40,9 +40,10 @@
     <router-link to="/p152">P152CountUpParent</router-link> |
     <router-link to="/p159">P159EmitParent</router-link> |
     <router-link to="/p159_2">P159EmitParent2</router-link> |
-    <router-link to="/p165">P165Parent</router-link> |
-    <router-link to="/p168">P168Parent</router-link> |
-    <router-link to="/p172">P172Parent</router-link> |
+    <router-link to="/p165">P165ParentSlot</router-link> |
+    <router-link to="/p165_2">P165ParentSlot2</router-link> |
+    <router-link to="/p168">P168ParentMultiSlot</router-link> |
+    <router-link to="/p172">P172ParentScopeSlot</router-link> |
     <router-link to="/p345">P345</router-link> |
     <router-link to="/p345_2">P345_2</router-link> |
     <router-link to="/p350">P350</router-link> |

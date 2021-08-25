@@ -1,16 +1,16 @@
 <template>
   <div class="compSample">
-    <P165CompMyHello>鈴木</P165CompMyHello>
-    <P165CompMyHello>山田</P165CompMyHello>
+    <CompSrotButton>送信</CompSrotButton>
+    <CompSrotButton>登録</CompSrotButton>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import P165CompMyHello from "../../components/sample/P165CompMyHello.vue";
+import CompSrotButton from "../../components/sample/CompSrotButton.vue";
 @Component({
   components: {
-    P165CompMyHello,
+    CompSrotButton,
   },
 })
 export default class Parent extends Vue {}

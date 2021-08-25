@@ -142,15 +142,19 @@ const routes: Array<RouteConfig> = [
   },
   {
     path: "/p172",
-    component: () => import("../views/sample/P172Parent.vue"),
+    component: () => import("../views/sample/P172ParentScopeSlot.vue"),
   },
   {
     path: "/p168",
-    component: () => import("../views/sample/P168Parent.vue"),
+    component: () => import("../views/sample/P168ParentMultiSlot.vue"),
+  },
+  {
+    path: "/p165_2",
+    component: () => import("../views/sample/P165ParentSlot2.vue"),
   },
   {
     path: "/p165",
-    component: () => import("../views/sample/P165Parent.vue"),
+    component: () => import("../views/sample/P165ParentSlot.vue"),
   },
   {
     path: "/p159_2",
