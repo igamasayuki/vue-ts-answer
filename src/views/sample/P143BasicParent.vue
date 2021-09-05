@@ -12,8 +12,8 @@
 <script lang="ts">
 // 参考：https://qiita.com/nrslib/items/be90cc19fa3122266fd7
 import { Component, Vue } from "vue-property-decorator";
-import CompMyName from "../../components/sample/CompMyName.vue";
-import CompMyHobby from "../../components/sample/CompMyHobby.vue";
+import CompMyName from "@/components/sample/CompMyName.vue";
+import CompMyHobby from "@/components/sample/CompMyHobby.vue";
 
 @Component({
   components: {

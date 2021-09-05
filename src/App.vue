@@ -48,7 +48,6 @@
     <router-link to="/p350">P350</router-link> |
     <router-link to="/p353">P353</router-link> |
     <router-link to="/p359">P359</router-link> |
-    <router-link to="/compVuex1">compVuex1</router-link> |
 
     <h2>Exam answers</h2>
     <router-link to="/ex10">Ex10</router-link> |

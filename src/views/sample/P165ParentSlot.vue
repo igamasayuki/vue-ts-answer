@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import CompSrotButton from "../../components/sample/CompSrotButton.vue";
+import CompSrotButton from "@/components/sample/CompSrotButton.vue";
 @Component({
   components: {
     CompSrotButton,

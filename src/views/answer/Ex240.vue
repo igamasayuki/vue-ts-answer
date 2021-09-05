@@ -12,7 +12,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import Ex240CompSlotMulti from "../../components/answer/Ex240CompSlotMulti.vue";
+import Ex240CompSlotMulti from "@/components/answer/Ex240CompSlotMulti.vue";
 @Component({
   components: {
     Ex240CompSlotMulti,

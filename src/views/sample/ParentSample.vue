@@ -6,7 +6,7 @@
 
 <script lang="ts">
 // @ is an alias to /src
-import CompSample from "../../components/answer/CompSample.vue";
+import CompSample from "@/components/answer/CompSample.vue";
 
 export default {
   name: "ParentSample",

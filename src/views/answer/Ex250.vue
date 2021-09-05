@@ -26,7 +26,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import Ex250CompEmployeeInfo from "../../components/answer/Ex250CompEmployeeInfo.vue";
+import Ex250CompEmployeeInfo from "@/components/answer/Ex250CompEmployeeInfo.vue";
 @Component({
   components: {
     Ex250CompEmployeeInfo,

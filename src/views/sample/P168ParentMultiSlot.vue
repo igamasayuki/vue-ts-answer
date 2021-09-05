@@ -14,7 +14,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import CompSrotMulti from "../../components/sample/CompSrotMulti.vue";
+import CompSrotMulti from "@/components/sample/CompSrotMulti.vue";
 @Component({
   components: {
     CompSrotMulti,

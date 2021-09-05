@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import CompSrotImg from "../../components/sample/CompSrotImg.vue";
+import CompSrotImg from "@/components/sample/CompSrotImg.vue";
 @Component({
   components: {
     CompSrotImg,

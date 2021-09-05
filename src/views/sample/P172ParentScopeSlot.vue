@@ -17,7 +17,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import CompViewItem from "../../components/sample/CompViewItem.vue";
+import CompViewItem from "@/components/sample/CompViewItem.vue";
 @Component({
   components: {
     CompViewItem,

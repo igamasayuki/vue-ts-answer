@@ -16,7 +16,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import Ex190CompSelfIntroduction from "../../components/answer/Ex190CompSelfIntroduction.vue";
+import Ex190CompSelfIntroduction from "@/components/answer/Ex190CompSelfIntroduction.vue";
 @Component({
   components: {
     Ex190CompSelfIntroduction,

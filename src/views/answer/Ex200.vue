@@ -12,7 +12,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import Ex200CompButtonCounter from "../../components/answer/Ex200CompButtonCounter.vue";
+import Ex200CompButtonCounter from "@/components/answer/Ex200CompButtonCounter.vue";
 @Component({
   components: {
     Ex200CompButtonCounter,

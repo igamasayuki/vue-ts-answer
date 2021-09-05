@@ -9,7 +9,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import CompCounterEmit from "../../components/sample/CompCounterEmit2.vue";
+import CompCounterEmit from "@/components/sample/CompCounterEmit2.vue";
 @Component({
   components: {
     CompCounterEmit,

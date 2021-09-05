@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import { Item } from "../../types/item";
+import { Item } from "@/types/item";
 @Component
 export default class CompViewItem extends Vue {
   private item: Item = new Item(30, "TypeScriptの書籍", 4500);

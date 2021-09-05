@@ -9,7 +9,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import CompPropsYourName from "../../components/sample/CompPropsYourName.vue";
+import CompPropsYourName from "@/components/sample/CompPropsYourName.vue";
 @Component({
   components: {
     CompPropsYourName,

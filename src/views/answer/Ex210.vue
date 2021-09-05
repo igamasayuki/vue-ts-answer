@@ -8,7 +8,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import Ex210CompCheer from "../../components/answer/Ex210CompCheer.vue";
+import Ex210CompCheer from "@/components/answer/Ex210CompCheer.vue";
 @Component({
   components: {
     Ex210CompCheer,

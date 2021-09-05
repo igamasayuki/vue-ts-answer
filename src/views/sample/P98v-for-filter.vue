@@ -20,7 +20,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import { Item } from "../../types/item";
+import { Item } from "@/types/item";
 
 @Component
 export default class SampleComponent extends Vue {

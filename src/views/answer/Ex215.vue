@@ -11,7 +11,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import Ex215CompCuntUp from "../../components/answer/Ex215CompCuntUp.vue";
+import Ex215CompCuntUp from "@/components/answer/Ex215CompCuntUp.vue";
 @Component({
   components: {
     Ex215CompCuntUp,

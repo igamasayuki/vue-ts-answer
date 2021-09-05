@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import Ex230CompMyName from "../../components/answer/Ex230CompMyName.vue";
+import Ex230CompMyName from "@/components/answer/Ex230CompMyName.vue";
 @Component({
   components: {
     Ex230CompMyName,
