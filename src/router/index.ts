@@ -7,6 +7,10 @@ Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
   {
+    path: "/compVuex1",
+    component: () => import("../components/sample/CompVuex1.vue"),
+  },
+  {
     path: "/ex250",
     component: () => import("../views/answer/Ex250.vue"),
   },
