@@ -7,6 +7,8 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   strict: true,
   state: {
+    // CompVuex1.vueで使用
+    // カウントデータ(0で初期化)
     count: 0,
     books: [
       new Book("111-111-111", "初めてのTypeScript", 2300),
@@ -15,17 +17,25 @@ export default new Vuex.Store({
     ],
   },
   mutations: {
-    minus(state) {
-      state.count--;
-    },
-    plus(state) {
+    // CompVuex1.vueで使用
+    // カウントアップメソッド
+    countUp(state) {
       state.count++;
+    },
+    // カウントダウンメソッド
+    countDown(state) {
+      state.count--;
     },
     addBook(state, payload) {
       state.books.push(payload.book);
     },
   },
   getters: {
+    // CompVuex1.vueで使用
+    // state内のcountを返す
+    getCount(state) {
+      return state.count;
+    },
     booksCount(state) {
       return state.books.length;
     },

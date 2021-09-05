@@ -133,12 +133,8 @@ const routes: Array<RouteConfig> = [
     component: () => import("../views/sample/P350.vue"),
   },
   {
-    path: "/p345_2",
-    component: () => import("../views/sample/P345_2.vue"),
-  },
-  {
-    path: "/p345",
-    component: () => import("../views/sample/P345.vue"),
+    path: "/compVuex1",
+    component: () => import("../components/sample/CompVuex1.vue"),
   },
   {
     path: "/p172",
