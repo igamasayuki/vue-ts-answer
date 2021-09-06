@@ -1,4 +1,3 @@
-import { Book } from "@/types/book";
 import Vue from "vue";
 import Vuex from "vuex";
 import { Item } from "@/types/item";
@@ -17,17 +16,13 @@ export default new Vuex.Store({
       new Item(20, "iMac", 150000),
       new Item(30, "Mac Book Pro", 200000),
     ],
-    books: [
-      new Book("111-111-111", "初めてのTypeScript", 2300),
-      new Book("222-222-222", "初めてのJavaScript", 2400),
-      new Book("333-333-333", "初めてのCoffeeScript", 2500),
-    ],
   },
   actions: {
-    addAsync(context, payload) {
-      // 5000ミリ秒後にミューテーション(ADD_BOOK)をコミット
+    // CompVuex4.vueで使用
+    addItemAsync(context, payload) {
+      // 5000ミリ秒後にミューテーション(addItem)をコミット
       setTimeout(function () {
-        context.commit("addBook", payload);
+        context.commit("addItem", payload);
       }, 5000);
     },
   },
@@ -81,14 +76,6 @@ export default new Vuex.Store({
     //   return (price: number) =>
     //     state.items.filter((item) => item.price <= price);
     // },
-    booksCount(state) {
-      return state.books.length;
-    },
-    getBooksByPrice(state) {
-      return (price: number) => {
-        return state.books.filter((book) => book.price < price);
-      };
-    },
   },
   modules: {},
 });
