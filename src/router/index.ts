@@ -129,6 +129,10 @@ const routes: Array<RouteConfig> = [
     component: () => import("../views/sample/P353.vue"),
   },
   {
+    path: "/compVuex3",
+    component: () => import("../components/sample/CompVuex3.vue"),
+  },
+  {
     path: "/compVuex2",
     component: () => import("../components/sample/CompVuex2.vue"),
   },

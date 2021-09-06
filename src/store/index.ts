@@ -41,8 +41,10 @@ export default new Vuex.Store({
     countDown(state) {
       state.count--;
     },
-    addBook(state, payload) {
-      state.books.push(payload.book);
+    // CompVuex3.vueで使用
+    // 第２引数で情報を受け取れる(この引数のことをペイロードという)
+    addItem(state, payload) {
+      state.items.push(payload.item);
     },
   },
   getters: {

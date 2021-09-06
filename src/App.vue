@@ -46,6 +46,7 @@
     <router-link to="/p172">P172ParentScopeSlot</router-link> |
     <router-link to="/compVuex1">compVuex1</router-link> |
     <router-link to="/compVuex2">compVuex2</router-link> |
+    <router-link to="/compVuex3">compVuex3</router-link> |
     <router-link to="/p353">P353</router-link> |
     <router-link to="/p359">P359</router-link> |
 
