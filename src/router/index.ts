@@ -121,6 +121,10 @@ const routes: Array<RouteConfig> = [
     component: () => import("../views/answer/Ex10.vue"),
   },
   {
+    path: "/compVuex5",
+    component: () => import("../components/sample/CompVuex5.vue"),
+  },
+  {
     path: "/compVuex4",
     component: () => import("../components/sample/CompVuex4.vue"),
   },

@@ -1,6 +1,10 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import { Item } from "@/types/item";
+// CompVuex5.vueで使用
+import { Employee } from "@/types/employee";
+// 使うためには「npm install axios --save」を実行
+import axios from "axios";
 
 Vue.use(Vuex);
 
@@ -16,6 +20,9 @@ export default new Vuex.Store({
       new Item(20, "iMac", 150000),
       new Item(30, "Mac Book Pro", 200000),
     ],
+    // CompVuex5.vueで使用
+    totalEmployeeCount: 0,
+    employees: new Array<Employee>(),
   },
   actions: {
     // CompVuex4.vueで使用
@@ -24,6 +31,15 @@ export default new Vuex.Store({
       setTimeout(function () {
         context.commit("addItem", payload);
       }, 5000);
+    },
+    // CompVuex5.vueで使用
+    async getEmployeeList(context, payload) {
+      const response = await axios.get(
+        "http://localhost:8080/ex-emp/employee/employees"
+      );
+      console.dir("response:" + JSON.stringify(response));
+      payload = response.data; // responseデータの中のdataをペイロードに渡す
+      context.commit("addEmployeeList", payload); // ミューテーションの呼び出し
     },
   },
   mutations: {
@@ -40,6 +56,25 @@ export default new Vuex.Store({
     // 第２引数で情報を受け取れる(この引数のことをペイロードという)
     addItem(state, payload) {
       state.items.push(payload.item);
+    },
+    // CompVuex5.vueで使用
+    addEmployeeList(state, payload) {
+      // console.dir("payload:" + JSON.stringify(payload));
+      console.log("totalEmployeeCount:" + payload.totalEmployees);
+      state.totalEmployeeCount = payload.totalEmployees;
+      state.employees = new Array<Employee>();
+      for (const employee of payload.employees) {
+        state.employees.push(
+          new Employee(
+            employee.id,
+            employee.name,
+            employee.hireDate,
+            employee.salary,
+            employee.dependentsCount
+          )
+        );
+      }
+      console.log("employees:" + state.employees);
     },
   },
   getters: {
@@ -76,6 +111,13 @@ export default new Vuex.Store({
     //   return (price: number) =>
     //     state.items.filter((item) => item.price <= price);
     // },
+    // CompVuex5.vueで使用
+    getEmployeeCount(state) {
+      return state.employees.length;
+    },
+    getEmployees(state) {
+      return state.employees;
+    },
   },
   modules: {},
 });
