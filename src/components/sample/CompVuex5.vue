@@ -31,7 +31,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-// import { mapGetters } from "vuex";
+import { Employee } from "@/types/employee";
 
 @Component
 export default class SampleComponent extends Vue {
@@ -42,11 +42,11 @@ export default class SampleComponent extends Vue {
   }
 
   // 非同期で取得した従業員一覧を取得し返す
-  get getEmployees(): void {
+  get getEmployees(): Array<Employee> {
     return this["$store"].getters.getEmployees;
   }
   // 非同期で取得した従業員数を取得し返す
-  get getEmployeeCount(): void {
+  get getEmployeeCount(): number {
     // return this["$store"].state.totalEmployeeCount;
     return this["$store"].getters.getEmployeeCount;
   }
