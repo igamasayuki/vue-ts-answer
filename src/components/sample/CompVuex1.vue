@@ -22,12 +22,12 @@ export default class SampleComponent extends Vue {
   }
 
   countUp(): void {
-    // (非推奨の書き方)this.$store.commit("plus");
+    // (非推奨の書き方→)this.$store.commit("plus");
     this["$store"].commit("countUp");
   }
 
   countDown(): void {
-    // (非推奨の書き方)this.$store.commit("minus");
+    // (非推奨の書き方→)this.$store.commit("minus");
     this["$store"].commit("countDown");
   }
 }
