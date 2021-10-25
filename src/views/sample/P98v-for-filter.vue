@@ -24,14 +24,20 @@ import { Item } from "@/types/item";
 
 @Component
 export default class SampleComponent extends Vue {
-  items = [
+  private items = [
     new Item(10, "Javaの書籍", 3000),
     new Item(20, "Pythonの書籍", 2000),
     new Item(30, "TypeScriptの書籍", 4500),
   ];
 
   get expensiveItems(): Array<Item> {
+    // アロー関数使用
     return this.items.filter((item) => item.price >= 3000);
+
+    // 関数宣言使用
+    // return this.items.filter(function (item) {
+    //   return item.price >= 3000;
+    // });
   }
 }
 </script>

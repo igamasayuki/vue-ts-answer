@@ -13,7 +13,7 @@ import { Component, Vue } from "vue-property-decorator";
 //コンポーネント
 @Component
 export default class CompMyName extends Vue {
-  myName = "山田太郎";
+  private myName = "山田太郎";
 
   changeName(): void {
     this.myName = "鈴木一郎";

@@ -13,7 +13,7 @@ import { Component, Vue } from "vue-property-decorator";
 //コンポーネント
 @Component
 export default class CompmyMyHobby extends Vue {
-  myHobby = "トライアスロン";
+  private myHobby = "トライアスロン";
 
   changeHobby(): void {
     this.myHobby = "マラソン";

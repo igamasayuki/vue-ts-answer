@@ -18,9 +18,9 @@ import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class SampleComponent extends Vue {
   // テキストフィールド1の最初のsize
-  textSize = 10;
+  private textSize = 10;
   // テキストフィールド2の最初の属性群
-  attributes = {
+  private attributes = {
     type: "text",
     size: 20,
     maxlength: 3,

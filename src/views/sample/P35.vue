@@ -12,9 +12,9 @@ export default class SampleComponent extends Vue {
       "beforeCreateイベント発生！(Vueインスタンスが生成された&データの初期化前)"
     );
   }
-  create(): void {
+  created(): void {
     console.log(
-      "createイベント発生！(Vueインスタンスが生成された&データの初期化後)"
+      "createdイベント発生！(Vueインスタンスが生成された&データの初期化後)"
     );
   }
   beforeMount(): void {

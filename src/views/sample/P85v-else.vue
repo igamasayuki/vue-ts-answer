@@ -14,7 +14,7 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class SampleComponent extends Vue {
-  canShow = true;
+  private canShow = true;
 }
 </script>
 

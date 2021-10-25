@@ -11,7 +11,7 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class SampleComponent extends Vue {
-  myName = "";
+  private myName = "";
 
   // ボタンがクリックされた際に呼ばれるメソッド
   onclick(): void {

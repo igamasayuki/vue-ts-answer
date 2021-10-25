@@ -9,7 +9,7 @@ import { Prop, Component, Vue } from "vue-property-decorator";
 @Component
 export default class CompPropsYourName extends Vue {
   @Prop({ default: "名無し" })
-  yourName!: string;
+  private yourName!: string;
 }
 </script>
 

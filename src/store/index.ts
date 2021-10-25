@@ -35,7 +35,7 @@ export default new Vuex.Store({
     // CompVuex5.vueで使用
     async getEmployeeList(context, payload) {
       const response = await axios.get(
-        "http://localhost:8080/ex-emp/employee/employees"
+        "http://153.127.48.168:8080/ex-emp-api/employee/employees"
       );
       console.dir("response:" + JSON.stringify(response));
       payload = response.data; // responseデータの中のdataをペイロードに渡す
