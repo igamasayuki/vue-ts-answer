@@ -11,8 +11,8 @@
 import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class SampleComponent extends Vue {
-  rows = 5;
-  cols = 5;
+  private rows = 5;
+  private cols = 5;
 
   chengeSize(): void {
     if (this.rows === 5) {

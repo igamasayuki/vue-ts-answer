@@ -1,6 +1,7 @@
 <template>
-  <div class="ex">
-    <div class="my-name">{{ myName }}</div>
+  <div class="sample">
+    <p>{{ message }}</p>
+    <p>{{ greet }}</p>
   </div>
 </template>
 
@@ -8,12 +9,13 @@
 import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class SampleComponent extends Vue {
-  private myName = "山田太郎";
+  private message = "Hello Vue.js！";
+  private greet = "こんにちは！";
 }
 </script>
 
 <style scoped>
-.my-name {
-  border: solid;
+p {
+  font-weight: bold;
 }
 </style>

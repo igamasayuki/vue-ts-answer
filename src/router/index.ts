@@ -112,13 +112,15 @@ const routes: Array<RouteConfig> = [
   },
   {
     path: "/ex20",
-    // name: "Ex20",
     component: () => import("../views/answer/Ex20.vue"),
   },
   {
     path: "/ex10",
-    // name: "Ex10",
     component: () => import("../views/answer/Ex10.vue"),
+  },
+  {
+    path: "/ex01",
+    component: () => import("../views/Ex01.vue"),
   },
   {
     path: "/compVuex5",

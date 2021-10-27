@@ -16,7 +16,7 @@ import CompCounterEmit from "@/components/answer/Ex225CompCounterEmit.vue";
   },
 })
 export default class Parent extends Vue {
-  current = 0;
+  private current = 0;
 
   onplus(value: number): void {
     this.current += value;

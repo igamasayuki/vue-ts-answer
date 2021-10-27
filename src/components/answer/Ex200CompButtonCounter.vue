@@ -18,7 +18,7 @@ export default class Ex200CompButtonCounter extends Vue {
   //   validator: (value) => value >= 0,
   // })
   // private firstCount!: number;
-  currentCount = this.firstCount;
+  private currentCount = this.firstCount;
   countUp(): void {
     this.currentCount++;
   }

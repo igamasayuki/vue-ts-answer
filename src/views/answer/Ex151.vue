@@ -11,7 +11,7 @@
 import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class SampleComponent extends Vue {
-  attributes = {
+  private attributes = {
     rows: 5,
     cols: 5,
   };

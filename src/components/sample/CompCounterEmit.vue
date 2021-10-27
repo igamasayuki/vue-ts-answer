@@ -9,7 +9,7 @@ import { Emit, Component, Vue } from "vue-property-decorator";
 @Component
 export default class CompCounterEmit extends Vue {
   @Emit()
-  public countUp(): void {
+  countUp(): void {
     console.log("count-upイベント発生");
   }
 }

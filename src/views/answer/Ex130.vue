@@ -64,7 +64,7 @@ import { Component, Vue } from "vue-property-decorator";
 import { Employee } from "@/types/employee";
 @Component
 export default class SampleComponent extends Vue {
-  employees = [
+  private employees = [
     new Employee(10, "渡辺三郎", "2018-10-29", 130000, 3),
     new Employee(20, "佐藤次郎", "2017-08-22", 450000, 3),
     new Employee(30, "山本八郎", "2017-6-18", 300000, 12),

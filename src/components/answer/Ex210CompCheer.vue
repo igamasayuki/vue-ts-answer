@@ -17,7 +17,7 @@ export default class Ex210CompCheer extends Vue {
   //   default: "がんばれ！",
   // })
   // private fight!: string;
-  cheer = "";
+  private cheer = "";
   cheering(): void {
     this.cheer += this.fight;
   }

@@ -27,8 +27,8 @@
 import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class SampleComponent extends Vue {
-  trueFlag = true;
-  falseFlag = false;
+  private trueFlag = true;
+  private falseFlag = false;
 }
 </script>
 

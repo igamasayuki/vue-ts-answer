@@ -10,7 +10,7 @@ import { Component, Vue } from "vue-property-decorator";
 //コンポーネント名「
 @Component
 export default class CompSample extends Vue {
-  myName = "山田太郎";
+  private myName = "山田太郎";
 }
 </script>
 

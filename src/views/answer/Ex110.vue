@@ -33,9 +33,9 @@
 import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class SampleComponent extends Vue {
-  hobby = "未選択";
-  sport = "";
-  otherHobby = "";
+  private hobby = "未選択";
+  private sport = "";
+  private otherHobby = "";
 }
 </script>
 

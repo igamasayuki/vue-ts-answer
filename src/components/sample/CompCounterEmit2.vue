@@ -9,12 +9,12 @@ import { Emit, Component, Vue } from "vue-property-decorator";
 @Component
 export default class CompCounterEmit extends Vue {
   @Emit()
-  public countUp(count: number): void {
+  countUp(count: number): void {
     console.log("count-upイベント発生!" + count + "を親に渡します");
   }
 
   //ボタンクリックで呼ばれるメソッド
-  public preCountUp(): void {
+  preCountUp(): void {
     this.countUp(1); // ←イベント発生メソッドを呼ぶ。この時の引数が親に渡る
   }
 }

@@ -10,9 +10,9 @@
 import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class SampleComponent extends Vue {
-  lastName = "山田";
-  firstName = "太郎";
-  age = 21;
+  private lastName = "山田";
+  private firstName = "太郎";
+  private age = 21;
 
   get fullName(): string {
     return this.lastName + this.firstName;

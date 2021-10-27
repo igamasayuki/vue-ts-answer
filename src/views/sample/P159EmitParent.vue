@@ -16,7 +16,7 @@ import CompCounterEmit from "@/components/sample/CompCounterEmit.vue";
   },
 })
 export default class EmitParent extends Vue {
-  count = 0;
+  private count = 0;
   onCountUp(): void {
     this.count += 1;
   }

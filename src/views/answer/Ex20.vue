@@ -12,13 +12,13 @@
 import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class SampleComponent extends Vue {
-  // 月の調整 (月は0から数えるため+1用のマジックナンバーを定数に入れておく constは使えないのでreadonlyにする)
+  // 月の調整 (月は0から数えるため+1用のマジックナンバーを定数に入れておく フィールド変数のためconstは使えないのでreadonlyにする)
   readonly MOON_ADJUSTMENT = 1;
-  myName = "山田太郎";
-  myAge = 21;
+  private myName = "山田太郎";
+  private myAge = 21;
   // 月は0から数えます 0=1月,1=2月・・・
-  myBirthDay = new Date(1999, 7 - this.MOON_ADJUSTMENT, 27);
-  myHobbies = ["スイム", "バイク", "ラン"];
+  private myBirthDay = new Date(1999, 7 - this.MOON_ADJUSTMENT, 27);
+  private myHobbies = ["スイム", "バイク", "ラン"];
 }
 </script>
 

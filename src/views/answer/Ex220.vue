@@ -15,7 +15,7 @@ import Ex220CompYesOrNo from "@/components/answer/Ex220CompYesOrNo.vue";
   },
 })
 export default class Parent extends Vue {
-  pushButtonName = "ボタンを押してください";
+  private pushButtonName = "ボタンを押してください";
   onpush(value: string): void {
     this.pushButtonName = value;
   }
