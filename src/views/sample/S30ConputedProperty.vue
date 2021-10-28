@@ -16,13 +16,13 @@ export default class SampleComponent extends Vue {
   // 算出プロパティ(TypeScriptではGetterで表現)
   get firstHalfOfEmail(): string {
     // @の前半部分を切り出してreturnする
-    return this.email.split("@")[0].toLowerCase();
+    return this.email.split("@")[0];
   }
 
   // 算出プロパティ(TypeScriptではGetterで表現)
   get secondHalfOfEmail(): string {
     // @の後半部分を切り出してreturnする
-    return this.email.split("@")[1].toLowerCase();
+    return this.email.split("@")[1];
   }
 }
 </script>

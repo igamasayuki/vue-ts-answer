@@ -14,11 +14,11 @@ export default class SampleComponent extends Vue {
   private firstName = "太郎";
   private age = 21;
 
-  get fullName(): string {
+  get fullName() {
     return this.lastName + this.firstName;
   }
 
-  get plus10Years(): number {
+  get plus10Years() {
     return this.age + 10;
   }
 }

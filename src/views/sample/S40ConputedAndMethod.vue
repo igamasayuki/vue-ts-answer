@@ -18,17 +18,17 @@ export default class SampleComponent extends Vue {
   private count = 0;
 
   // 算出プロパティ(Getterメソッド)
-  get randomGetter(): number {
+  get randomGetter() {
     return Math.random();
   }
 
   // メソッド
-  randomMethod(): number {
+  randomMethod() {
     return Math.random();
   }
 
   // ボタンがクリックされたら呼ばれます
-  onclick(): void {
+  onclick() {
     this.count++;
   }
 }
