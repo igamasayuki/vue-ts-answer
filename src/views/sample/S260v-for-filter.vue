@@ -32,12 +32,21 @@ export default class SampleComponent extends Vue {
 
   get expensiveItems(): Array<Item> {
     // アロー関数使用
-    return this.items.filter((item) => item.price >= 3000);
+    // return this.items.filter((item) => item.price >= 3000);
 
     // 関数宣言使用
     // return this.items.filter(function (item) {
     //   return item.price >= 3000;
     // });
+
+    // 省略しない書き方
+    let newArray = [];
+    for (let item of this.items) {
+      if (item.price <= 3000) {
+        newArray.push(item);
+      }
+    }
+    return newArray;
   }
 }
 </script>

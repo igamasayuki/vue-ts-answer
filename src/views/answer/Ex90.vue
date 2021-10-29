@@ -7,16 +7,16 @@
       />
       / {{ isNotRobots }}
     </div>
-    <tamplate v-if="isNotRobots">
+    <div v-if="isNotRobots">
       <hr />
       <div>ロボットではない(v-if)</div>
       <button type="button">人間用ボタン</button>
-    </tamplate>
-    <tamplate v-show="isNotRobots">
+    </div>
+    <div v-show="isNotRobots">
       <hr />
       <div>ロボットではない(v-show)</div>
       <button type="button">人間用ボタン</button>
-    </tamplate>
+    </div>
   </div>
 </template>
 

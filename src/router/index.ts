@@ -175,8 +175,8 @@ const routes: Array<RouteConfig> = [
     component: () => import("../views/sample/P151PropsParent.vue"),
   },
   {
-    path: "/p143",
-    component: () => import("../views/sample/P143BasicParent.vue"),
+    path: "/s280",
+    component: () => import("../views/sample/S280BasicParent.vue"),
   },
   {
     path: "/parentSample",
@@ -184,52 +184,52 @@ const routes: Array<RouteConfig> = [
     component: ParentSample,
   },
   {
-    path: "/p108",
-    component: () => import("../views/sample/P108v-bind.vue"),
+    path: "/s270",
+    component: () => import("../views/sample/S270v-bind.vue"),
   },
   {
-    path: "/p98",
-    component: () => import("../views/sample/P98v-for-filter.vue"),
+    path: "/s260",
+    component: () => import("../views/sample/S260v-for-filter.vue"),
   },
   {
-    path: "/p96",
-    component: () => import("../views/sample/P96v-for-get.vue"),
+    path: "/s250",
+    component: () => import("../views/sample/S250v-for-get.vue"),
   },
   {
-    path: "/p95",
-    component: () => import("../views/sample/P95v-for-index.vue"),
+    path: "/s240",
+    component: () => import("../views/sample/S240v-for-index.vue"),
   },
   {
-    path: "/p93_2",
-    component: () => import("../views/sample/P93v-for2.vue"),
+    path: "/s230",
+    component: () => import("../views/sample/S230v-for2.vue"),
   },
   {
-    path: "/p93",
-    component: () => import("../views/sample/P93v-for.vue"),
+    path: "/s220",
+    component: () => import("../views/sample/S220v-for.vue"),
   },
   {
-    path: "/p91",
-    component: () => import("../views/sample/P91v-show.vue"),
+    path: "/s210",
+    component: () => import("../views/sample/S210v-show.vue"),
   },
   {
-    path: "/p90",
-    component: () => import("../views/sample/P90useKey.vue"),
+    path: "/s200",
+    component: () => import("../views/sample/S200useKey.vue"),
   },
   {
-    path: "/p87",
-    component: () => import("../views/sample/P87notUseKey.vue"),
+    path: "/s190",
+    component: () => import("../views/sample/S190notUseKey.vue"),
   },
   {
-    path: "/p86",
-    component: () => import("../views/sample/P86v-else-if.vue"),
+    path: "/s180",
+    component: () => import("../views/sample/S180v-else-if.vue"),
   },
   {
-    path: "/p85",
-    component: () => import("../views/sample/P85v-else.vue"),
+    path: "/s170",
+    component: () => import("../views/sample/S170v-else.vue"),
   },
   {
-    path: "/p84",
-    component: () => import("../views/sample/P84v-if.vue"),
+    path: "/s160",
+    component: () => import("../views/sample/S160v-if.vue"),
   },
   {
     path: "/s150",
