@@ -21,12 +21,13 @@ export default class CompCounterProp extends Vue {
   // })
   // private initialCount!: number;
 
-  // 親コンポーネントから渡ってきた値を子コンポーネントの変数に退避
-  private nowCount: number = this.initialCount;
+  // 親コンポーネントから渡ってきた値を子コンポーネントの変数に退避(文字列として渡されるためNumber型に変換する)
+  private nowCount = Number(this.initialCount);
 
   countUp(): void {
     // ボタンが押されたら子コンポーネントの変数を更新する
-    this.nowCount++;
+    // this.nowCount++;
+    this.nowCount = this.nowCount + 1;
   }
 }
 </script>

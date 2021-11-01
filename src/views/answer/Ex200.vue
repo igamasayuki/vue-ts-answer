@@ -6,6 +6,7 @@
     <!-- 追加演習回答例 属性に0以下を指定 -->
     <!-- <Ex200CompButtonCounter first-count="-1"></Ex200CompButtonCounter> -->
     <!-- 追加演習回答例 属性に数値として1を指定 -->
+    <!-- 以下のようにすると数値として渡すことができます -->
     <!-- <Ex200CompButtonCounter v-bind:first-count="1"></Ex200CompButtonCounter> -->
   </div>
 </template>

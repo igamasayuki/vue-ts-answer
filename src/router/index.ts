@@ -143,36 +143,36 @@ const routes: Array<RouteConfig> = [
     component: () => import("../components/sample/CompVuex1.vue"),
   },
   {
-    path: "/p172",
-    component: () => import("../views/sample/P172ParentScopeSlot.vue"),
+    path: "/s360",
+    component: () => import("../views/sample/S360ParentScopeSlot.vue"),
   },
   {
-    path: "/p168",
-    component: () => import("../views/sample/P168ParentMultiSlot.vue"),
+    path: "/s350",
+    component: () => import("../views/sample/S350ParentMultiSlot.vue"),
   },
   {
-    path: "/p165_2",
-    component: () => import("../views/sample/P165ParentSlot2.vue"),
+    path: "/s340",
+    component: () => import("../views/sample/S340ParentSlot2.vue"),
   },
   {
-    path: "/p165",
-    component: () => import("../views/sample/P165ParentSlot.vue"),
+    path: "/s330",
+    component: () => import("../views/sample/S330ParentSlot.vue"),
   },
   {
-    path: "/p159_2",
-    component: () => import("../views/sample/P159EmitParent2.vue"),
+    path: "/s320",
+    component: () => import("../views/sample/S320EmitParent2.vue"),
   },
   {
-    path: "/p159",
-    component: () => import("../views/sample/P159EmitParent.vue"),
+    path: "/s310",
+    component: () => import("../views/sample/S310EmitParent.vue"),
   },
   {
-    path: "/p152",
-    component: () => import("../views/sample/P152CountUpParent.vue"),
+    path: "/s300",
+    component: () => import("../views/sample/S300CountUpParent.vue"),
   },
   {
-    path: "/p151",
-    component: () => import("../views/sample/P151PropsParent.vue"),
+    path: "/s290",
+    component: () => import("../views/sample/S290PropsParent.vue"),
   },
   {
     path: "/s280",

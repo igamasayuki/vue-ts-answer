@@ -18,8 +18,8 @@
 </template>
 
 <script lang="ts">
+import { Item } from "@/types/item";
 import { Component, Vue } from "vue-property-decorator";
-// import { mapGetters } from "vuex";
 
 @Component
 export default class SampleComponent extends Vue {
@@ -46,11 +46,11 @@ export default class SampleComponent extends Vue {
     // );
   }
 
-  get itemCount(): void {
+  get itemCount(): number {
     return this["$store"].getters.getItemCount;
   }
 
-  getItemByPrice(price: number): void {
+  getItemByPrice(price: number): Array<Item> {
     return this["$store"].getters.getItemByPrice(price);
   }
 }

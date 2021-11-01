@@ -9,7 +9,8 @@
 import { Prop, Component, Vue } from "vue-property-decorator";
 @Component
 export default class Ex200CompButtonCounter extends Vue {
-  @Prop() private firstCount!: number;
+  @Prop({ default: 0 })
+  private firstCount!: number;
   // 追加演習回答例
   // @Prop({
   //   type: Number,
@@ -18,9 +19,11 @@ export default class Ex200CompButtonCounter extends Vue {
   //   validator: (value) => value >= 0,
   // })
   // private firstCount!: number;
-  private currentCount = this.firstCount;
+  private currentCount: number = this.firstCount;
+
   countUp(): void {
-    this.currentCount++;
+    // this.currentCount++;
+    this.currentCount = this.currentCount + 1;
   }
 }
 </script>

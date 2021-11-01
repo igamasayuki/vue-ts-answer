@@ -1,17 +1,17 @@
 <template>
   <div class="compSample">
-    <CompCounter></CompCounter>
+    <CompCounterProp></CompCounterProp>
     <hr />
-    <CompCounter initial-count="10"></CompCounter>
+    <CompCounterProp initial-count="10"></CompCounterProp>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import CompCounter from "@/components/sample/CompCounterProp.vue";
+import CompCounterProp from "@/components/sample/CompCounterProp.vue";
 @Component({
   components: {
-    CompCounter,
+    CompCounterProp,
   },
 })
 export default class CountUpParent extends Vue {}
