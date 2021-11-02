@@ -13,9 +13,6 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class SampleComponent extends Vue {
-  // エラーになる
-  // get mapGetters(['itemCount','getItemByPrice'])
-
   get itemCount(): number {
     return this["$store"].getters.getItemCount;
   }

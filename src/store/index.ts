@@ -8,7 +8,7 @@ import axios from "axios";
 
 Vue.use(Vuex);
 
-export default new Vuex.Store({
+const store = new Vuex.Store({
   strict: true,
   state: {
     // CompVuex1.vueで使用
@@ -21,7 +21,11 @@ export default new Vuex.Store({
       new Item(30, "Mac Book Pro", 200000),
     ],
     // CompVuex5.vueで使用
+    // 従業員の人数が入る変数
+    //(WebAPIから返ってくるJSON内のキーに名前を合わせる)
     totalEmployeeCount: 0,
+    // 従業員一覧が入る変数
+    // (WebAPIから返ってくるJSON内のキーに名前を合わせる)
     employees: new Array<Employee>(),
   },
   actions: {
@@ -33,12 +37,14 @@ export default new Vuex.Store({
       }, 5000);
     },
     // CompVuex5.vueで使用
-    async getEmployeeList(context, payload) {
+    async getEmployeeList(context) {
+      // 外部WebAPIの呼び出し(上書きしないためconstにする=しないとESLintでエラー)
       const response = await axios.get(
         "http://153.127.48.168:8080/ex-emp-api/employee/employees"
       );
       console.dir("response:" + JSON.stringify(response));
-      payload = response.data; // responseデータの中のdataをペイロードに渡す
+      // responseデータの中のdataをpayload変数に格納(上書きしないためconstにする=しないとESLintでエラー)
+      const payload = response.data;
       context.commit("addEmployeeList", payload); // ミューテーションの呼び出し
     },
   },
@@ -59,21 +65,24 @@ export default new Vuex.Store({
     },
     // CompVuex5.vueで使用
     addEmployeeList(state, payload) {
-      // console.dir("payload:" + JSON.stringify(payload));
-      console.log("totalEmployeeCount:" + payload.totalEmployees);
-      state.totalEmployeeCount = payload.totalEmployees;
-      state.employees = new Array<Employee>();
-      for (const employee of payload.employees) {
-        state.employees.push(
-          new Employee(
-            employee.id,
-            employee.name,
-            employee.hireDate,
-            employee.salary,
-            employee.dependentsCount
-          )
-        );
-      }
+      // payload内の従業員数をstateの従業員数に格納
+      state.totalEmployeeCount = payload.totalEmployeeCount;
+
+      // payload内の従業員一覧をstateの従業員一覧に格納
+      state.employees = payload.employees;
+
+      // 上記の1行は以下のコードと同じ意味です。
+      // for (const employee of payload.employees) {
+      //   state.employees.push(
+      //     new Employee(
+      //       employee.id,
+      //       employee.name,
+      //       employee.hireDate,
+      //       employee.salary,
+      //       employee.dependentsCount
+      //     )
+      //   );
+      // }
       console.log("employees:" + state.employees);
     },
   },
@@ -113,7 +122,9 @@ export default new Vuex.Store({
     // },
     // CompVuex5.vueで使用
     getEmployeeCount(state) {
-      return state.employees.length;
+      return state.totalEmployeeCount;
+      //↓stateのtotalEmployeeCoutを使用しなくても以下で同様のことも可能
+      // return state.employees.length;
     },
     getEmployees(state) {
       return state.employees;
@@ -121,3 +132,5 @@ export default new Vuex.Store({
   },
   modules: {},
 });
+
+export default store;

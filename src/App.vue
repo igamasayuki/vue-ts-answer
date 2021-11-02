@@ -49,6 +49,7 @@
     <router-link to="/compVuex3">compVuex3</router-link> |
     <router-link to="/compVuex4">compVuex4</router-link> |
     <router-link to="/compVuex5">compVuex5</router-link> |
+    <router-link to="/compVuex6">compVuex6</router-link> |
     <h2>Exam answers</h2>
     <router-link to="/ex10">Ex10</router-link> |
     <router-link to="/ex20">Ex20</router-link> |

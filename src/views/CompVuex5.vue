@@ -1,10 +1,8 @@
 <template>
   <div class="sample">
-    <form>
-      <button type="button" v-on:click="onclick">従業員情報取得</button>
-    </form>
+    <button type="button" v-on:click="onclick">従業員情報取得</button>
     <hr />
-    <div>従業員数:{{ getEmployeeCount }}人</div>
+    <div>従業員数:{{ employeeCount }}人</div>
     <div class="row">
       <table>
         <thead>
@@ -16,7 +14,7 @@
         </thead>
 
         <tbody>
-          <tr v-for="employee of getEmployees" v-bind:key="employee.id">
+          <tr v-for="employee of employees" v-bind:key="employee.id">
             <td>
               {{ employee.name }}
             </td>
@@ -41,14 +39,15 @@ export default class SampleComponent extends Vue {
     this["$store"].dispatch("getEmployeeList");
   }
 
-  // 非同期で取得した従業員一覧を取得し返す
-  get getEmployees(): Array<Employee> {
-    return this["$store"].getters.getEmployees;
-  }
   // 非同期で取得した従業員数を取得し返す
-  get getEmployeeCount(): number {
+  get employeeCount(): number {
     // return this["$store"].state.totalEmployeeCount;
     return this["$store"].getters.getEmployeeCount;
+  }
+
+  // 非同期で取得した従業員一覧を取得し返す
+  get employees(): Array<Employee> {
+    return this["$store"].getters.getEmployees;
   }
 }
 </script>

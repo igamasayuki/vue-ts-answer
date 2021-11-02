@@ -29,21 +29,15 @@ export default class SampleComponent extends Vue {
   private price = 0;
 
   onclick(): void {
-    // ミューテーションを使って同期処理
+    // アクションを使って非同期処理
     // 第２引数には「名前：値,・・・」のオブジェクト形式で渡す
-    // ミューテーションに渡す引数のことを「ペイロード」という
-    this["$store"].commit("addItem", {
-      item: {
-        id: this.id,
-        name: this.name,
-        price: this.price,
-      },
+    // アクションに渡す引数のことを「ペイロード」という
+    this["$store"].dispatch("addItemAsync", {
+      item: new Item(Number(this.id), this.name, this.price),,
     });
-    // 以下のようにオブジェクトは渡せない
-    // this["$store"].commit(
-    //   "addItem",
-    //   new Item(this.id, this.name, this.price)
-    // );
+    // this["$store"].commit("addItem", {
+    //   item: new Item(Number(this.id), this.name, this.price),
+    // });
   }
 
   get itemCount(): number {

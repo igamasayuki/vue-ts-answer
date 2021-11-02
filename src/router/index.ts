@@ -123,24 +123,28 @@ const routes: Array<RouteConfig> = [
     component: () => import("../views/Ex01.vue"),
   },
   {
+    path: "/compVuex6",
+    component: () => import("../views/CompVuex6.vue"),
+  },
+  {
     path: "/compVuex5",
-    component: () => import("../components/sample/CompVuex5.vue"),
+    component: () => import("../views/CompVuex5.vue"),
   },
   {
     path: "/compVuex4",
-    component: () => import("../components/sample/CompVuex4.vue"),
+    component: () => import("../views/CompVuex4.vue"),
   },
   {
     path: "/compVuex3",
-    component: () => import("../components/sample/CompVuex3.vue"),
+    component: () => import("../views/CompVuex3.vue"),
   },
   {
     path: "/compVuex2",
-    component: () => import("../components/sample/CompVuex2.vue"),
+    component: () => import("../views/CompVuex2.vue"),
   },
   {
     path: "/compVuex1",
-    component: () => import("../components/sample/CompVuex1.vue"),
+    component: () => import("../views/CompVuex1.vue"),
   },
   {
     path: "/s360",
