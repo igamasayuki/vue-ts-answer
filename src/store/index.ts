@@ -69,20 +69,22 @@ const store = new Vuex.Store({
       state.totalEmployeeCount = payload.totalEmployeeCount;
 
       // payload内の従業員一覧をstateの従業員一覧に格納
-      state.employees = payload.employees;
+      // state.employees = payload.employees;
 
-      // 上記の1行は以下のコードと同じ意味です。
-      // for (const employee of payload.employees) {
-      //   state.employees.push(
-      //     new Employee(
-      //       employee.id,
-      //       employee.name,
-      //       employee.hireDate,
-      //       employee.salary,
-      //       employee.dependentsCount
-      //     )
-      //   );
-      // }
+      // 上記の1行は以下のコードとほぼ同じ意味です(Employeeオブジェクト独自のメソッド(日付フォーマットメソッドなど)を使用したい場合は以下のように書く必要あり)
+      // 呼ばれる度に追加されないよう一度空の配列で初期化する
+      state.employees = new Array<Employee>();
+      for (const employee of payload.employees) {
+        state.employees.push(
+          new Employee(
+            employee.id,
+            employee.name,
+            employee.hireDate,
+            employee.salary,
+            employee.dependentsCount
+          )
+        );
+      }
       console.log("employees:" + state.employees);
     },
   },
