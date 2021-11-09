@@ -14,11 +14,11 @@ import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class SampleComponent extends Vue {
   get itemCount(): number {
-    return this["$store"].getters.getItemCount;
+    return this.$store.getters.getItemCount;
   }
 
   getItemByPrice(price: number): Array<Item> {
-    return this["$store"].getters.getItemByPrice(price);
+    return this.$store.getters.getItemByPrice(price);
   }
 }
 </script>

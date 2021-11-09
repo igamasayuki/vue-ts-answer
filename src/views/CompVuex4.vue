@@ -32,20 +32,20 @@ export default class SampleComponent extends Vue {
     // アクションを使って非同期処理
     // 第２引数には「名前：値,・・・」のオブジェクト形式で渡す
     // アクションに渡す引数のことを「ペイロード」という
-    this["$store"].dispatch("addItemAsync", {
+    this.$store.dispatch("addItemAsync", {
       item: new Item(Number(this.id), this.name, this.price),,
     });
-    // this["$store"].commit("addItem", {
+    // this.$store.commit("addItem", {
     //   item: new Item(Number(this.id), this.name, this.price),
     // });
   }
 
   get itemCount(): number {
-    return this["$store"].getters.getItemCount;
+    return this.$store.getters.getItemCount;
   }
 
   getItemByPrice(price: number): Array<Item> {
-    return this["$store"].getters.getItemByPrice(price);
+    return this.$store.getters.getItemByPrice(price);
   }
 }
 </script>
