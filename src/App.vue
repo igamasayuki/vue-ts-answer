@@ -50,6 +50,11 @@
     <router-link to="/compVuex4">compVuex4</router-link> |
     <router-link to="/compVuex5">compVuex5</router-link> |
     <router-link to="/compVuex6">compVuex6</router-link> |
+    <router-link to="/s370">S370ReactiveData</router-link> |
+    <router-link to="/s371">S371ReactiveData2</router-link> |
+    <router-link to="/s372">S372ReactiveData3</router-link> |
+    <router-link to="/s380">S380Watcher</router-link> |
+    <router-link to="/s381">S381Watcher2</router-link> |
     <h2>Exam answers</h2>
     <router-link to="/ex10">Ex10</router-link> |
     <router-link to="/ex20">Ex20</router-link> |

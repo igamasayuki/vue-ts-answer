@@ -123,6 +123,26 @@ const routes: Array<RouteConfig> = [
     component: () => import("../views/Ex01.vue"),
   },
   {
+    path: "/s381",
+    component: () => import("../views/sample/S381Watcher2.vue"),
+  },
+  {
+    path: "/s380",
+    component: () => import("../views/sample/S380Watcher.vue"),
+  },
+  {
+    path: "/s372",
+    component: () => import("../views/sample/S372ReactiveData3.vue"),
+  },
+  {
+    path: "/s371",
+    component: () => import("../views/sample/S371ReactiveData2.vue"),
+  },
+  {
+    path: "/s370",
+    component: () => import("../views/sample/S370ReactiveData.vue"),
+  },
+  {
     path: "/compVuex6",
     component: () => import("../views/CompVuex6.vue"),
   },
