@@ -9,7 +9,7 @@ import { Emit, Component, Vue } from "vue-property-decorator";
 @Component
 export default class Ex215CompCuntUp extends Vue {
   @Emit()
-  public up(): void {
+  up(): void {
     console.log("upイベント発生");
   }
 }

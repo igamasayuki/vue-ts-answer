@@ -9,10 +9,13 @@
 import { Prop, Component, Vue } from "vue-property-decorator";
 @Component
 export default class CompCounterProp extends Vue {
+  // v-bind:initial-count="10"とした際はnumber型で渡されます。
+  //数値で受け取るためnumber型にしています。
+  //(JavaScriptに変換されて動作するため、ここはstring型にしていても動作します。)
   @Prop({ default: 0 })
   private initialCount!: number;
 
-  // プロパティ値の型を制限する(応用のため研修ではやりません)
+  // // プロパティ値の型を制限する
   // @Prop({
   //   type: Number,
   //   required: true,
@@ -21,8 +24,8 @@ export default class CompCounterProp extends Vue {
   // })
   // private initialCount!: number;
 
-  // 親コンポーネントから渡ってきた値を子コンポーネントの変数に退避(文字列として渡されるためNumber型に変換する)
-  private nowCount = Number(this.initialCount);
+  // 親コンポーネントから渡ってきた値を子コンポーネントの変数に退避
+  private nowCount = this.initialCount;
 
   countUp(): void {
     // ボタンが押されたら子コンポーネントの変数を更新する

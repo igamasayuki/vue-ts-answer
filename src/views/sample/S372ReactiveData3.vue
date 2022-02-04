@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import { Author } from "@/types/Author";
+import { Author } from "@/types/author";
 @Component
 export default class SampleComponent extends Vue {
   private author = new Author("山田", "株式会社ヤマ");

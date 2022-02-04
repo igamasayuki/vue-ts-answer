@@ -9,7 +9,7 @@
         <th>給料</th>
         <th>扶養人数</th>
       </tr>
-      <tr v-for="employee in employees" v-bind:key="employee.id">
+      <tr v-for="employee of employees" v-bind:key="employee.id">
         <td>{{ employee.id }}</td>
         <td>{{ employee.name }}</td>
         <td>{{ employee.hireDate }}</td>
@@ -43,10 +43,10 @@ export default class SampleComponent extends Vue {
   ];
 
   private id = 0;
-  private name = "サンプル太郎";
-  private hireDate = "2021-8-20";
-  private salary = 180000;
-  private dependentsCount = 5;
+  private name = "";
+  private hireDate = "";
+  private salary = 0;
+  private dependentsCount = 0;
 
   // 先頭の要素を削除
   deleteFirstEmployee(): void {

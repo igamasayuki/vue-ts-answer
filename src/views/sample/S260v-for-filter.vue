@@ -1,6 +1,6 @@
 <template>
   <div class="sample">
-    <div>3,000円以上の商品一覧</div>
+    <div>3,000円以下の商品一覧</div>
     <table class="table">
       <tr>
         <th>繰返し回数</th>
@@ -32,11 +32,11 @@ export default class SampleComponent extends Vue {
 
   get expensiveItems(): Array<Item> {
     // アロー関数使用
-    // return this.items.filter((item) => item.price >= 3000);
+    // return this.items.filter((item) => item.price <= 3000);
 
     // 関数宣言使用
     // return this.items.filter(function (item) {
-    //   return item.price >= 3000;
+    //   return item.price <= 3000;
     // });
 
     // 省略しない書き方

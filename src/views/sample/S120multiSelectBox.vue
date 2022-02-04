@@ -2,15 +2,15 @@
   <div class="sample">
     <form>
       <div>セレクトボックス(複数)</div>
-      <label for="hobby">趣味は何ですか？</label><br />
-      <select v-model="hobby" multiple>
+      趣味は何ですか？<br />
+      <select v-model="hobbies" multiple>
         <option value="">hobbyを選択してください</option>
         <option>水泳</option>
         <option>自転車</option>
         <option>ランニング</option>
       </select>
       <br />
-      選択した値：{{ hobby }}
+      選択した値：{{ hobbies }}
     </form>
   </div>
 </template>
@@ -20,7 +20,7 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class SampleComponent extends Vue {
-  private hobby = ["水泳", "ランニング"];
+  private hobbies = ["水泳", "ランニング"];
 }
 </script>
 

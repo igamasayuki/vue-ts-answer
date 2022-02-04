@@ -1,8 +1,8 @@
 <template>
   <div class="sample">
-    <button type="button" v-on:click="countDown">-</button>
+    <button type="button" v-on:click="down">-</button>
     {{ count }}
-    <button type="button" v-on:click="countUp">+</button>
+    <button type="button" v-on:click="up">+</button>
   </div>
 </template>
 
@@ -17,11 +17,11 @@ export default class SampleComponent extends Vue {
     // return this.$store.state.count;
   }
 
-  countUp(): void {
+  up(): void {
     this.$store.commit("countUp");
   }
 
-  countDown(): void {
+  down(): void {
     this.$store.commit("countDown");
   }
 }

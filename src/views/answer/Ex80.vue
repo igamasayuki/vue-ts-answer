@@ -76,7 +76,7 @@ export default class SampleComponent extends Vue {
   private firstName = "";
   private age = 0;
   private gender = "男性";
-  private hobbies = [];
+  private hobbies = new Array<string>();
   private language = "JavaScript";
   private other = "";
   private isNotRobots = false;

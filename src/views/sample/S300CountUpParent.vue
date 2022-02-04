@@ -2,7 +2,8 @@
   <div class="compSample">
     <CompCounterProp></CompCounterProp>
     <hr />
-    <CompCounterProp initial-count="10"></CompCounterProp>
+    <!-- 数値として子コンポーネントに値を渡す場合はv-bind:をつけます -->
+    <CompCounterProp v-bind:initial-count="10"></CompCounterProp>
   </div>
 </template>
 

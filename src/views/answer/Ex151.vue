@@ -3,7 +3,7 @@
     <textarea v-bind="attributes"></textarea>
     <button type="button" v-on:click="chengeSize">サイズを変える</button>
     <br />
-    rows:{{ rows }} / cols:{{ cols }}
+    rows:{{ attributes.rows }} / cols:{{ attributes.cols }}
   </div>
 </template>
 

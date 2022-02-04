@@ -15,7 +15,7 @@ import { Component, Vue } from "vue-property-decorator";
 export default class SampleComponent extends Vue {
   private itemName = "お掃除ロボット";
   private itemUrl = "http://irobot-jp.com/";
-  private itemImg = "img/irobot.jpg";
+  private itemImg = "/img/irobot.jpg";
 }
 </script>
 

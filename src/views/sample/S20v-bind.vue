@@ -23,7 +23,7 @@ import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class SampleComponent extends Vue {
   private url = "http://google.co.jp";
-  private imageUrl = "img/irobot.jpg"; // public/img/irobot.jpgの中を参照
+  private imageUrl = "/img/irobot.jpg"; // public/img/irobot.jpgの中を参照
   private canNotClick = true;
 }
 </script>

@@ -101,13 +101,15 @@ const store = new Vuex.Store({
     },
     // 渡された値段以下の情報のみ返す
     getItemByPrice(state) {
+      // 以下の関数のpriceに引数の値が格納される
       return (price: number) => {
         return state.items.filter((item) => item.price <= price);
       };
     },
     // 慣れない人用の簡単な書き方
     // getItemByPrice(state) {
-    //   return (price: number) => {
+    //   // 以下の関数のpriceに引数の値が格納される
+    //   const functionName = (price: number) => {
     //     const newArray = [];
     //     for (const item of state.items) {
     //       if (item.price <= price) {
@@ -116,6 +118,7 @@ const store = new Vuex.Store({
     //     }
     //     return newArray;
     //   };
+    //   return functionName;
     // },
     // 慣れた人用の更に省略した書き方
     // getItemByPrice(state) {

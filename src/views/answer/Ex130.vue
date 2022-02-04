@@ -28,7 +28,7 @@
         <th>給料</th>
         <th>扶養人数</th>
       </tr>
-      <tr v-for="(employee, i) in employees" v-bind:key="employee.id">
+      <tr v-for="(employee, i) of employees" v-bind:key="employee.id">
         <td>{{ i + 1 }}</td>
         <td>{{ employee.id }}</td>
         <td>{{ employee.name }}</td>
@@ -47,7 +47,7 @@
         <th>給料</th>
         <th>扶養人数</th>
       </tr>
-      <tr v-for="employee in moreThan30Employees" v-bind:key="employee.id">
+      <tr v-for="employee of moreThan30Employees" v-bind:key="employee.id">
         <td>{{ employee.id }}</td>
         <td>{{ employee.name }}</td>
         <td>{{ employee.hireDate }}</td>
