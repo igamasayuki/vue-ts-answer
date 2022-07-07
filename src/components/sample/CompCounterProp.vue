@@ -25,7 +25,11 @@ export default class CompCounterProp extends Vue {
   // private initialCount!: number;
 
   // 親コンポーネントから渡ってきた値を子コンポーネントの変数に退避
-  private nowCount = this.initialCount;
+  private nowCount = 0;
+  // Vueインスタンスが生成された時に自動で実行されるライフサイクルフックのメソッド
+  created(): void {
+    this.nowCount = this.initialCount;
+  }
 
   countUp(): void {
     // ボタンが押されたら子コンポーネントの変数を更新する
