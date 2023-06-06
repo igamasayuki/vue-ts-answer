@@ -10,8 +10,8 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class SampleComponent extends Vue {
-  private message = "Hello Vue.js！";
-  private greet = "こんにちは！";
+  message = "Hello Vue.js！";
+  greet = "こんにちは！";
 }
 </script>
 

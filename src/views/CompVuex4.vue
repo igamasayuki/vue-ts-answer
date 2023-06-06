@@ -24,9 +24,9 @@ import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class SampleComponent extends Vue {
   // フォーム内に入力された情報が入る変数
-  private id = "";
-  private name = "";
-  private price = 0;
+  id = "";
+  name = "";
+  price = 0;
 
   onclick(): void {
     // アクションを使って非同期処理

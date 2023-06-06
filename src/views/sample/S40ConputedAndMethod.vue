@@ -15,7 +15,7 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class SampleComponent extends Vue {
-  private count = 0;
+  count = 0;
 
   // 算出プロパティ(Getterメソッド)
   get randomGetter(): number {

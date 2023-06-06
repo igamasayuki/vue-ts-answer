@@ -14,8 +14,8 @@ import _ from "lodash";
 
 @Component
 export default class SampleComponent extends Vue {
-  private name = "";
-  private upperName = "";
+  name = "";
+  upperName = "";
 
   // eslint-disable-next-line @typescript-eslint/ban-types
   private delayFunc!: Function;

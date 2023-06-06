@@ -8,7 +8,7 @@
 import { Emit, Prop, Component, Vue } from "vue-property-decorator";
 @Component
 export default class CompCounterEmit extends Vue {
-  @Prop() private step!: number;
+  @Prop() step!: number;
 
   @Emit()
   plus(value: number): void {

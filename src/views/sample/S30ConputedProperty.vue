@@ -11,7 +11,7 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class SampleComponent extends Vue {
-  private email = "yamada@test.com";
+  email = "yamada@test.com";
 
   // 算出プロパティ(TypeScriptではGetterで表現)
   get firstHalfOfEmail(): string {

@@ -10,7 +10,7 @@
 import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class SampleComponent extends Vue {
-  private name = "";
+  name = "";
 
   onclick(): void {
     this.name = "山田太郎";

@@ -24,7 +24,7 @@
 import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class SampleComponent extends Vue {
-  private isNotRobots = false;
+  isNotRobots = false;
 }
 </script>
 

@@ -10,9 +10,9 @@
 import { Prop, Component, Vue } from "vue-property-decorator";
 @Component
 export default class Ex190CompSelfIntroduction extends Vue {
-  @Prop() private myName!: string;
-  @Prop() private myAge!: string;
-  @Prop() private myHobby!: string;
+  @Prop() myName!: string;
+  @Prop() myAge!: string;
+  @Prop() myHobby!: string;
 }
 </script>
 

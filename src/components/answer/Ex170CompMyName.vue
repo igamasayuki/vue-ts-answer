@@ -8,7 +8,7 @@
 import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class Ex170CompMyName extends Vue {
-  private myName = "山田太郎";
+  myName = "山田太郎";
 }
 </script>
 

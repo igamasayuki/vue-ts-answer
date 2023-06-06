@@ -9,8 +9,8 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class SampleComponent extends Vue {
-  private current = new Date();
-  private timer = 0;
+  current = new Date();
+  timer = 0;
 
   created(): void {
     // 下のsetIntervalメソッド配下では、thisはVueインスタンスではなく、グローバルオブジェクト(Window)に変化してしまうため、thisをthatに退避している。

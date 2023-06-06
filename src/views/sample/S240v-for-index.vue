@@ -23,7 +23,7 @@ import { Item } from "@/types/item";
 
 @Component
 export default class SampleComponent extends Vue {
-  private items = [
+  items = [
     new Item(10, "Javaの書籍", 3000),
     new Item(20, "Pythonの書籍", 2000),
     new Item(30, "TypeScriptの書籍", 4500),

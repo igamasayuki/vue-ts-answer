@@ -18,10 +18,10 @@ export default class Ex200CompButtonCounter extends Vue {
   //   default: 10,
   //   validator: (value) => value >= 0,
   // })
-  // private firstCount!: number;
+  // firstCount!: number;
 
   // 親コンポーネントから渡ってきた値を子コンポーネントの変数に退避
-  private currentCount = 0;
+  currentCount = 0;
   // Vueインスタンスが生成された時に自動で実行されるライフサイクルフックのメソッド
   created(): void {
     this.currentCount = this.firstCount;

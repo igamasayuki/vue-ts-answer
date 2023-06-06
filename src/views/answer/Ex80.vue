@@ -72,14 +72,14 @@
 import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class SampleComponent extends Vue {
-  private lastName = "";
-  private firstName = "";
-  private age = 0;
-  private gender = "男性";
-  private hobbies = new Array<string>();
-  private language = "JavaScript";
-  private other = "";
-  private isNotRobots = false;
+  lastName = "";
+  firstName = "";
+  age = 0;
+  gender = "男性";
+  hobbies = new Array<string>();
+  language = "JavaScript";
+  other = "";
+  isNotRobots = false;
 }
 </script>
 

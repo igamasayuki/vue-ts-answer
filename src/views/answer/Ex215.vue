@@ -18,7 +18,7 @@ import Ex215CompCuntUp from "@/components/answer/Ex215CompCuntUp.vue";
   },
 })
 export default class Parent extends Vue {
-  private currentCount = 0;
+  currentCount = 0;
   onup(): void {
     this.currentCount++;
   }

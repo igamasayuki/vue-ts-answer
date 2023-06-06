@@ -9,7 +9,7 @@ import { Prop, Emit, Component, Vue } from "vue-property-decorator";
 @Component
 export default class Ex220CompYesOrNo extends Vue {
   @Prop()
-  private yesOrNo!: string;
+  yesOrNo!: string;
   @Emit()
   public push(value: string): void {
     console.log("pushイベント発生 value =" + value);

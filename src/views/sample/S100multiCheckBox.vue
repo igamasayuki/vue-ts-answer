@@ -20,7 +20,7 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class SampleComponent extends Vue {
-  private hobbies = ["水泳", "ランニング"];
+  hobbies = ["水泳", "ランニング"];
 }
 </script>
 

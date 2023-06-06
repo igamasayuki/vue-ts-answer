@@ -13,7 +13,7 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class SampleComponent extends Vue {
-  private myName = "名無し";
+  myName = "名無し";
 }
 </script>
 

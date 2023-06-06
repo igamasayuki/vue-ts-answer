@@ -14,9 +14,9 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class SampleComponent extends Vue {
-  private num1 = 0;
-  private num2 = 0;
-  private answer = 0;
+  num1 = 0;
+  num2 = 0;
+  answer = 0;
 
   onclick(): void {
     // 数値で渡されると正しい結果になる

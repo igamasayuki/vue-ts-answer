@@ -42,11 +42,11 @@ export default class SampleComponent extends Vue {
     new Employee(30, "山本八郎", "2017-6-18", 300000, 12),
   ];
 
-  private id = 0;
-  private name = "";
-  private hireDate = "";
-  private salary = 0;
-  private dependentsCount = 0;
+  id = 0;
+  name = "";
+  hireDate = "";
+  salary = 0;
+  dependentsCount = 0;
 
   // 先頭の要素を削除
   deleteFirstEmployee(): void {

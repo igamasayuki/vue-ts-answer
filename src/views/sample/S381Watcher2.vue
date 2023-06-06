@@ -19,9 +19,9 @@ import { Employee } from "@/types/employee";
 
 @Component
 export default class SampleComponent extends Vue {
-  private inputName = "";
+  inputName = "";
   // 初期値で初期化しなければtemplateでidなどが存在しないということでエラーとなる
-  private updateEmployee = new Employee(0, "初期値", "初期値", 0, 0);
+  updateEmployee = new Employee(0, "初期値", "初期値", 0, 0);
   // private updateEmployee.salary = "";
 
   // eslint-disable-next-line @typescript-eslint/ban-types

@@ -15,9 +15,9 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class SampleComponent extends Vue {
-  private str1 = "";
-  private str2 = "";
-  private result = "";
+  str1 = "";
+  str2 = "";
+  result = "";
 
   onclick(): void {
     this.result = this.str1 + this.str2;

@@ -16,13 +16,7 @@ import { Component, Vue } from "vue-property-decorator";
 import { Employee } from "../../types/employee";
 @Component
 export default class Ex250CompEmployeeInfo extends Vue {
-  private employee: Employee = new Employee(
-    10,
-    "渡辺三郎",
-    "2018-10-29",
-    130000,
-    3
-  );
+  employee: Employee = new Employee(10, "渡辺三郎", "2018-10-29", 130000, 3);
 }
 </script>
 

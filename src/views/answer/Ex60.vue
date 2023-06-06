@@ -29,8 +29,8 @@
 import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class SampleComponent extends Vue {
-  private trueFlag = true;
-  private falseFlag = false;
+  trueFlag = true;
+  falseFlag = false;
 
   onclick(): void {
     if (this.trueFlag) {
