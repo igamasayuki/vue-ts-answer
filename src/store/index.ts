@@ -8,7 +8,7 @@ import axios from "axios";
 
 Vue.use(Vuex);
 
-const store = new Vuex.Store({
+export default new Vuex.Store({
   strict: true,
   state: {
     // CompVuex1.vueで使用
@@ -137,5 +137,3 @@ const store = new Vuex.Store({
   },
   modules: {},
 });
-
-export default store;

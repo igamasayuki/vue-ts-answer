@@ -1,4 +1,4 @@
-# vue.js-answer2
+# vue-ts-answer
 
 ## Project setup
 ```

@@ -1,11 +1,24 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
-import Home from "../views/Home.vue";
-import ParentSample from "../views/sample/ParentSample.vue";
+import HomeView from "../views/HomeView.vue";
 
 Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
+  {
+    path: "/",
+    name: "home",
+    component: HomeView,
+  },
+  {
+    path: "/about",
+    name: "about",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+  },
   {
     path: "/ex250",
     component: () => import("../views/answer/Ex250.vue"),
@@ -202,11 +215,11 @@ const routes: Array<RouteConfig> = [
     path: "/s280",
     component: () => import("../views/sample/S280BasicParent.vue"),
   },
-  {
-    path: "/parentSample",
-    name: "ParentSample",
-    component: ParentSample,
-  },
+  // {
+  //   path: "/parentSample",
+  //   name: "ParentSample",
+  //   component: ParentSample,
+  // },
   {
     path: "/s270",
     component: () => import("../views/sample/S270v-bind.vue"),
@@ -314,20 +327,6 @@ const routes: Array<RouteConfig> = [
   {
     path: "/S10",
     component: () => import("../views/sample/S10HelloVuejs.vue"),
-  },
-  {
-    path: "/",
-    name: "Home",
-    component: Home,
-  },
-  {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
 ];
 
